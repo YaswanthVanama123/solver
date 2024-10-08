@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+.skillRegistrationContainer {
+    width: 95vw;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px;
+    
+}
+
+.skillHead1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skillRegistrationContainer p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+.skillRegistrationContainer h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.skillRegistrationContainer label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.skillRegistrationContainer input[type="text"],
+.skillRegistrationContainer input[type="email"],
+.skillRegistrationContainer input[type="tel"],
+.skillRegistrationContainer select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+select option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: solid 1px #E8E8EA;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    color: black;
+}
+
+.flexDirection {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsubmit {
+    background-color: #18181B;
+    color: white;
+    width: 100%;
+    max-width: 260px;
+}
+
+.button-div {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.terms-conditions {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.terms-conditions a {
+    color: black;
+    text-decoration: underline;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proofPic {
+    height: 150px;
+    width: 150px;
+    border: solid 1px #DDDDDD;
+    background-size: cover;
+}
+
+.profilePic {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: solid 1px #DDDDDD;
+    background-size: cover;
+}
+
+.terms-conditions a:hover {
+    text-decoration: underline;
+}
+
+/* Hide the actual file input */
+input[type="file"] {
+    display: none;
+}
+
+/* Style the custom file input button */
+.custom-file-input {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #1e1e1e;
+    border: solid 1px #1e1e1e;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+
+
+/* Styling the profilePic and proofPic containers */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .flexDirection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .form-group-check {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .skillRegistrationContainer{
+        width: 100vw;
+
+    }
+    .skill-registration{
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+    }
+    .skillRegistrationContainer h2 {
+
+        padding-bottom: 10px;
+    }
+}
