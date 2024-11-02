@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.skillRegistrationContainer {
+
+  overflow: hidden;
+  max-width: 88vw;
+  background-color: #ffffff;
+}
+
+
+
+
+
+.workerAccepatanceJobHead{ 
+  font-size: 15px;
+  padding-bottom: ;
+}
+
+.backIcon{
+  font-size: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.job-details-sub {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.job-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rupeeBold {
+
+  font-weight: 700;
+}
+
+.job-item .icon {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.accept-button,
+.reject-button {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.accept-button {
+  background-color: #444;
+}
+
+.reject-button {
+  background-color: #555;
+}
+
+#category{
+  width: 200px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+
+  }
+
+  .content h2 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .accept-button,
+  .reject-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 576px){
+  .container {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px;
+  }
+  .workerAcceptance{
+    justify-content: center;
+  }
+  .actions{
+    margin-bottom: 20px;
+  }
+}

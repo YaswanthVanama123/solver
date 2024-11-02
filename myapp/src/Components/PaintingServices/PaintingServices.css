@@ -1,0 +1,17 @@
+.painter {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Enable smooth scrolling for iOS */
+
+  /* To ensure space for the horizontal scrollbar */
+  min-height: 250px;
+}
+
+@media screen and (min-width: 768px) {
+  .painter {
+    height: 300px;
+  }
+}
