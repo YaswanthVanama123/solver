@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.profile-container {
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.profile-body-container{
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 20px;
+}
+
+.profile-details h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-details .profession {
+    color: #777;
+    font-size: 18px;
+}
+
+.about,
+.ratings-reviews,
+.completed-jobs {
+    margin-top: 20px;
+}
+
+.about h2,
+.ratings-reviews h2,
+.completed-jobs h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.about p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.ratings-reviews .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ratings-reviews .stars {
+    color: #000;
+    margin-right: 10px;
+}
+
+.ratings-reviews .rating-score {
+    font-size: 24px;
+    color: #555;
+}
+
+.review {
+    margin-bottom: 10px;
+}
+
+.review p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.completed-jobs ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.completed-jobs li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.completed-jobs .job-icon {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.completed-jobs .job-detail {
+    flex: 1;
+}
+
+.completed-jobs .job-detail p {
+    margin: 5px 0;
+}
+
+.completed-jobs .job-rating {
+    font-size: 18px;
+    color: #000000c8;
+}
+
+.profileAbout{
+    font-size: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .profile-container{
+        width: 100vw;
+       
+    }
+    .profileAbout{
+        font-size: 15px;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-picture {
+        margin: 0 0 10px 0;
+    }
+
+    .profile-details h1 {
+        font-size: 20px;
+    }
+
+    .profile-details .profession {
+        font-size: 16px;
+    }
+
+    .ratings-reviews .rating {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ratings-reviews .rating-score {
+        font-size: 20px;
+    }
+
+    .completed-jobs li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .completed-jobs .job-icon {
+        margin: 0 0 10px 0;
+    }
+
+    .completed-jobs .job-rating {
+        font-size: 16px;
+    }
+
+}

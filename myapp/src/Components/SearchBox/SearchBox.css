@@ -1,0 +1,138 @@
+.navContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #EDEDED; 
+  z-index: 1000;
+  position: sticky;
+  top: 0px;
+}
+
+.navContainer .left-section {
+  display: none;
+}
+
+.navContainer .middle-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer .right-section {
+  display: none;
+  position: relative; /* Ensure the parent container is positioned relative */
+}
+
+.navContainer .right-section .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0; /* Align the dropdown to the right edge of its container */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  flex-direction: column;
+  display: none;
+  width: max-content; /* Ensure the dropdown width is just enough to fit its content */
+}
+
+.navContainer .right-section:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Set a max-width for the search wrapper */
+}
+
+.suggestions {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  max-height: 200px; /* Adjust the max-height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f1f1f1;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.homeLoginButton{
+  padding: 10px;
+  background-color:#09090be0;
+  width: 100px;
+  color: white;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .navContainer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .navContainer .left-section {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .navContainer .right-section {
+    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}

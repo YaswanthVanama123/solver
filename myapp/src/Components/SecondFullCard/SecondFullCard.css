@@ -1,0 +1,59 @@
+.fullCardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 20px;
+  transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+.zoom-container-secondCard {
+  background-image: url('https://i.postimg.cc/s2g0Sdsr/IMG-20240708-201218.png');
+  background-size: cover;
+}
+
+.fullCardContainer:hover {
+  transform: scale(1.01); /* Zoom in on hover */
+}
+
+.SecondFullCardSideImage {
+  display: none;
+}
+
+.FullCardContentContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullCardImage {
+  width: 800px;
+  height: 400px;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.fullCardChargesContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-top: 20px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.fullCardButtonContainer {
+  display: flex;
+  align-self: flex-start;
+  padding-top: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  .zoom-container-secondCard {
+    background-image: linear-gradient(to right, #e4e5de, #d7d4ca);
+  }
+  .SecondFullCardSideImage {
+    display: block;
+  }
+}
