@@ -1,4 +1,9 @@
 # Node modules
+backend/node_modules/
+myapp/node_modules/
+partner/node_modules/
+partnermobileapp/node_modules/
+userapp1/node_modules/
 
 
 # Logs
