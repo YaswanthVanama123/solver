@@ -1,0 +1,62 @@
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.mainContainer{
+  min-height: 100vh;
+}
+
+.fixedtop {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.city {
+  font-size: 15px;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Optional: Adjust other styles */
+.services-container {
+  background-color: white;
+  padding-left: 10px;
+  position: relative;
+  margin-right: 15px;
+}
+
+.servicesSearch {
+  align-self: center;
+  height: 50px;
+  width: 100%;
+  padding: 15px;
+  padding-left: 35px;
+  border-radius: 10px;
+  border: solid 1px #dddddd;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: none;
+  /* Remove transition effect */
+  position: relative;
+  /* Initial position */
+  transition: placeholder 0.3s ease-in-out;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+  /* Adjust this value according to your preference */
+}
+@media screen and (min-width: 768px) {
+  .services-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
